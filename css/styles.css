@@ -721,6 +721,7 @@ img {
 .join-container {
   display: block;
   min-width: 206px;
+  margin-right: 93px;
 }
 
 .logo-link {
@@ -792,6 +793,66 @@ img {
 .join-list-link:focus {
   background-color: var(--accent-color);
 }
+
+.subtitle-form {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--primary-font-color);
+}
+
+.subscribe-wrapper {
+  display: flex;
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: var(--primary-font-color);
+}
+
+.footer-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-font-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.submit-btn::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url("../img/icon-send.svg");
+}
+
 /* =====end footer===== */
 
 .backdrop {
@@ -848,6 +909,10 @@ img {
   box-sizing: border-box;
   padding: 0;
   cursor: pointer;
+}
+
+.modal-close-button:hover .modal-close-icon {
+  fill: var(--accent-color);
 }
 
 .form-description {
@@ -963,13 +1028,12 @@ img {
   overflow: hidden;
 }
 
-/* .contact-form-checkbox:focus + .contact-form-checkbox-ladel::before {
-  border-radius: 2px;
-} */
-
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before {
   background-image: url("../img/icon-checked.svg");
   background-size: cover;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .contact-form-submit-btn {
